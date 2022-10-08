@@ -1,3 +1,4 @@
+//Binary Search algo can be used in any searching questions
 class BinarySearchExample{  
  public static void binarySearch(int arr[], int first, int last, int key){  
    int mid = (first + last)/2;  
