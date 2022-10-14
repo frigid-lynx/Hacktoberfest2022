@@ -1,4 +1,4 @@
-
+//java program 
 import java.io.*;
 
 class Pattern{
