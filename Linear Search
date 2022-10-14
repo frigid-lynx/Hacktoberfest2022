@@ -1,0 +1,15 @@
+public class LinearSearch1{    
+public static int linearSearch(int[] arr, int key){    
+        for(int i=0;i<arr.length;i++){    
+            if(arr[i] == key){    
+                return i;    
+            }    
+        }    
+        return -1;    
+    }    
+    public static void main(String a[]){    
+        int[] ex= {100,200,300,500,700,900};    
+        int key = 500;    
+        System.out.println(key+" is found to be at index: "+linearSearch(ex, key));    
+    }    
+} 
