@@ -1,0 +1,35 @@
+class BSort
+{
+	void bSort(int arr1[])
+	{
+		int l = arr1.length;
+		for (int i = 0; i < l-1; i++)
+			for (int j = 0; j < l-i-1; j++)
+				if (arr1[j] > arr1[j+1])
+				{
+					int tempor = arr1[j];
+					arr1[j] = arr1[j+1];
+					arr1[j+1] = tempor;
+				}
+	}
+
+void printTheArray(int arr1[])
+	{
+		int l = arr1.length;
+		for (int i=0; i<l; ++i)
+			System.out.print(arr1[i] + " ");
+		System.out.println();
+	}
+
+
+public static void main(String args[])
+	{
+		BSort obj1 = new BSort();
+		int arr1[] = {6, 3, 2, 1, 20, 19, 9};
+		obj1.bSort(arr1);
+		System.out.println("Sorted array is : ");
+		obj1.printTheArray(arr1);
+	}
+}
+
+
